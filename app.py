@@ -6,8 +6,7 @@ Created on Fri Jan  3 17:37:45 2025
 """
 
 import os
-from config import OPENAI_API_KEY
-os.environ['OPENAI_API_KEY'] = OPENAI_API_KEY
+os.environ['OPENAI_API_KEY'] = st.secrets['OPENAI_API_KEY']
 
 #import openai
 from dotenv import load_dotenv # Add
