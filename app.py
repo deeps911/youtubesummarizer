@@ -6,7 +6,8 @@ Created on Fri Jan  3 17:37:45 2025
 """
 
 import os
-os.environ['OPENAI_API_KEY'] = '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'
+from config import OPENAI_API_KEY
+os.environ['OPENAI_API_KEY'] = OPENAI_API_KEY
 
 #import openai
 from dotenv import load_dotenv # Add
