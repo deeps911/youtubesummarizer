@@ -4,7 +4,7 @@ Created on Fri Jan  3 17:37:45 2025
 
 @author: dverma
 """
-
+import streamlit as st
 import os
 os.environ['OPENAI_API_KEY'] = st.secrets['OPENAI_API_KEY']
 
@@ -13,7 +13,7 @@ from dotenv import load_dotenv # Add
 load_dotenv() # Add
 import langchain_openai
 from langchain_openai import OpenAI
-import streamlit as st
+
 
 import re
 from youtube_transcript_api import YouTubeTranscriptApi
